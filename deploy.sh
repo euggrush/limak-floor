@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:euggrush/euggrush.github.io.git master:gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:euggrush/limak-floor.git main:deploypages
+git push -f git@github.com:euggrush/limak-floor.git master:gh-pages
 
 cd -
