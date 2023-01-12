@@ -1,53 +1,42 @@
 <template>
-  <section class="bg-white container">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="text-success">Our Services</h2>
-        </div>
-      </div>
-    </div>
+  <!-- ======= Featured Services Section ======= -->
+  <section id="featured-services" class="featured-services section-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-success">Sales</h4>
-              <p class="card-text text-muted">
-                We offer a wide variety of flooring options for both residential
-                and commercial customers. From hardwood to tile, carpet to
-                laminate, we have something for every budget and style.
-              </p>
-            </div>
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-laptop"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">
+              Voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupiditate non provident
+            </p>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-success">Installation</h4>
-              <p class="card-text text-muted">
-                Our team of professional installers will handle the entire
-                process from start to finish. From removing old flooring to
-                installing the new, we'll make sure the job is done right.
-              </p>
-            </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">
+              Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat tarad limino ata
+            </p>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-success">Repairs and Maintenance</h4>
-              <p class="card-text text-muted">
-                We also offer repair and maintenance services for existing
-                flooring. From fixing scratches and stains to sanding and
-                refinishing hardwood floors, we've got you covered.
-              </p>
-            </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur trade stravi
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- End Featured Services Section -->
 </template>
 
 <script>

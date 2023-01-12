@@ -1,34 +1,58 @@
 <template>
-  <section class="bg-white container mt-5">
-    <div class="container py-5">
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+      </div>
+
       <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-success">About Limak Floor</h1>
-          <p class="lead text-muted">
-            Limak Floor is a leading provider of high-quality flooring products
-            and services. We have been in business for over 20 years and have
-            built a reputation for providing excellent customer service and
-            top-of-the-line products at competitive prices.
-          </p>
-          <p class="text-muted">
-            Our mission is to provide our customers with the highest quality
-            flooring products, installation and customer service. we pride
-            ourselves on offering a wide range of products and services to meet
-            the needs of both residential and commercial customers. We have a
-            team of experienced professionals who are dedicated to helping you
-            find the perfect flooring solution for your home or business.
-          </p>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-6">
-          <img
-            src="../../assets/img/about.jpeg"
-            alt="image"
-            class="img-fluid rounded"
-          />
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>
+            Voluptatem dignissimos provident quasi corporis voluptates sit
+            assumenda.
+          </h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-check-circled"></i> Ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </li>
+            <li>
+              <i class="bi bi-check-circled"></i> Duis aute irure dolor in
+              reprehenderit in voluptate velit.
+            </li>
+            <li>
+              <i class="bi bi-check-circled"></i> Ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate trideta storacalaperda mastiro dolore
+              eu fugiat nulla pariatur.
+            </li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum
+          </p>
         </div>
       </div>
     </div>
   </section>
+  <!-- End About Us Section -->
 </template>
 
 <script>
