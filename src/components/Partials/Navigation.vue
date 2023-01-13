@@ -1,5 +1,5 @@
 <template>
-  <section class="p-0 my-nav">
+  <section class="p-0">
     <!-- ======= Top Bar ======= -->
     <section id="topbar" class="d-flex align-items-center">
       <div
@@ -26,10 +26,13 @@
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center">
-        <h1 class="logo me-auto"><a href="index.html">Green</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+        <!-- <h1 class="logo me-auto"><a href="index.html">Green</a></h1> -->
+        <img
+          src="../../assets/img/logo.png"
+          class="limak-logo me-auto"
+          alt="logo"
+          width="100"
+        />
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -78,25 +81,47 @@
 </template>
 
 <script>
-export default {};
+export default {
+  // created() {
+  //   window.addEventListener("scroll", this.getMenuWork);
+  // },
+  // unmounted() {
+  //   window.removeEventListener("scroll", this.getMenuWork);
+  // },
+  // methods: {
+  //   getMenuWork() {
+  //     let selectHeader = document.querySelector("#header");
+  //     if (selectHeader) {
+  //       let headerOffset = selectHeader.offsetTop;
+  //       let nextElement = selectHeader.nextElementSibling;
+  //       const headerFixed = () => {
+  //         if (headerOffset - window.scrollY <= 0) {
+  //           selectHeader.classList.add("fixed-top");
+  //           nextElement.classList.add("scrolled-offset");
+  //         } else {
+  //           selectHeader.classList.remove("fixed-top");
+  //           nextElement.classList.remove("scrolled-offset");
+  //         }
+  //       };
+  //       // headerFixed();
+  //       window.addEventListener("load", headerFixed);
+  //       onscroll(document, headerFixed);
+  //     }
+  //   },
+  // },
+};
 </script>
 
 <style lang="scss" scoped>
-// .my-nav {
-//   @include media-breakpoint-up(sm) {
-//     outline: solid 3px red;
-//   }
-//   @include media-breakpoint-up(md) {
-//     outline: solid 3px red;
-//   }
-//   @include media-breakpoint-up(lg) {
-//     outline: solid 3px red;
-//   }
-//   @include media-breakpoint-up(xl) {
-//     outline: solid 3px red;
-//   }
-//   @include media-breakpoint-up(xxl) {
-//     outline: solid 3px red;
-//   }
-// }
+.limak-logo {
+  width: 120px;
+  height: 50px;
+  object-fit: cover;
+  @include media-breakpoint-up(md) {
+    width: 150px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 170px;
+  }
+}
 </style>

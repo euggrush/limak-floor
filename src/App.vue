@@ -7,10 +7,14 @@
 <script>
 import Navigation from "./components/Partials/Navigation.vue";
 import Footer from "./components/Partials/Footer.vue";
+
 export default {
   components: {
     Navigation,
     Footer,
+  },
+  mounted() {
+    this.getAllScripts();
   },
 };
 </script>
@@ -18,7 +22,6 @@ export default {
 <style lang="scss">
 #app {
   min-height: 100vh;
-  // border: 1px solid red;
 }
 
 body {
