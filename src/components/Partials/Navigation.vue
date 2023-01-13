@@ -1,5 +1,5 @@
 <template>
-  <section class="p-0">
+  <section class="p-0 my-nav">
     <!-- ======= Top Bar ======= -->
     <section id="topbar" class="d-flex align-items-center">
       <div
@@ -82,4 +82,21 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+// .my-nav {
+//   @include media-breakpoint-up(sm) {
+//     outline: solid 3px red;
+//   }
+//   @include media-breakpoint-up(md) {
+//     outline: solid 3px red;
+//   }
+//   @include media-breakpoint-up(lg) {
+//     outline: solid 3px red;
+//   }
+//   @include media-breakpoint-up(xl) {
+//     outline: solid 3px red;
+//   }
+//   @include media-breakpoint-up(xxl) {
+//     outline: solid 3px red;
+//   }
+// }
 </style>
