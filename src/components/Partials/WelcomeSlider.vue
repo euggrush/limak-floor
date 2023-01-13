@@ -11,10 +11,7 @@
 
       <div class="carousel-inner" role="listbox">
         <!-- Slide 1 -->
-        <div
-          class="carousel-item active"
-          style="background-image: url(assets/img/slide/slide-1.jpg)"
-        >
+        <div class="carousel-item slide-one active">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
@@ -40,10 +37,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div
-          class="carousel-item"
-          style="background-image: url(assets/img/slide/slide-2.jpg)"
-        >
+        <div class="carousel-item slide-two">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
@@ -69,10 +63,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div
-          class="carousel-item"
-          style="background-image: url(assets/img/slide/slide-3.jpg)"
-        >
+        <div class="carousel-item slide-three">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
@@ -131,4 +122,13 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.slide-one {
+  background-image: url("../../assets/img/slide/slide-1.jpg");
+}
+.slide-two {
+  background-image: url("../../assets/img/slide/slide-2.jpg");
+}
+.slide-three {
+  background-image: url("../../assets/img/slide/slide-3.jpg");
+}
 </style>
