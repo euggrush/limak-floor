@@ -27,7 +27,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-1.jpg"
+              src="../../assets/img/portfolio/portfolio-1.jpg"
               class="img-fluid"
               alt=""
             />
@@ -36,7 +36,7 @@
               <p>App</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-1.jpg"
+                  href="../../assets/img/portfolio/portfolio-1.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="App 1"
@@ -53,7 +53,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-2.jpg"
+              src="../../assets/img/portfolio/portfolio-2.jpg"
               class="img-fluid"
               alt=""
             />
@@ -62,7 +62,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-2.jpg"
+                  href="../../assets/img/portfolio/portfolio-2.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="Web 3"
@@ -79,7 +79,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-3.jpg"
+              src="../../assets/img/portfolio/portfolio-3.jpg"
               class="img-fluid"
               alt=""
             />
@@ -88,7 +88,7 @@
               <p>App</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-3.jpg"
+                  href="../../assets/img/portfolio/portfolio-3.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="App 2"
@@ -105,7 +105,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-4.jpg"
+              src="../../assets/img/portfolio/portfolio-4.jpg"
               class="img-fluid"
               alt=""
             />
@@ -114,7 +114,7 @@
               <p>Card</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-4.jpg"
+                  href="../../assets/img/portfolio/portfolio-4.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="Card 2"
@@ -131,7 +131,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-5.jpg"
+              src="../../assets/img/portfolio/portfolio-5.jpg"
               class="img-fluid"
               alt=""
             />
@@ -140,7 +140,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-5.jpg"
+                  href="../../assets/img/portfolio/portfolio-5.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="Web 2"
@@ -157,7 +157,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-6.jpg"
+              src="../../assets/img/portfolio/portfolio-6.jpg"
               class="img-fluid"
               alt=""
             />
@@ -166,7 +166,7 @@
               <p>App</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-6.jpg"
+                  href="../../assets/img/portfolio/portfolio-6.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="App 3"
@@ -183,7 +183,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-7.jpg"
+              src="../../assets/img/portfolio/portfolio-7.jpg"
               class="img-fluid"
               alt=""
             />
@@ -192,7 +192,7 @@
               <p>Card</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-7.jpg"
+                  href="../../assets/img/portfolio/portfolio-7.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="Card 1"
@@ -209,7 +209,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-8.jpg"
+              src="../../assets/img/portfolio/portfolio-8.jpg"
               class="img-fluid"
               alt=""
             />
@@ -218,7 +218,7 @@
               <p>Card</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-8.jpg"
+                  href="../../assets/img/portfolio/portfolio-8.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="Card 3"
@@ -235,7 +235,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <img
-              src="assets/img/portfolio/portfolio-9.jpg"
+              src="../../assets/img/portfolio/portfolio-9.jpg"
               class="img-fluid"
               alt=""
             />
@@ -244,7 +244,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a
-                  href="assets/img/portfolio/portfolio-9.jpg"
+                  href="../../assets/img/portfolio/portfolio-9.jpg"
                   data-gallery="portfolioGallery"
                   class="portfolio-lightbox"
                   title="Web 3"
