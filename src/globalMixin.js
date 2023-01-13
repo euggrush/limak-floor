@@ -159,18 +159,6 @@ export default {
             });
 
             /**
-             * Hero carousel indicators
-             */
-            let heroCarouselIndicators = select("#hero-carousel-indicators")
-            let heroCarouselItems = select('#heroCarousel .carousel-item', true)
-
-            heroCarouselItems.forEach((item, index) => {
-                (index === 0) ?
-                heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-                    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-            });
-
-            /**
              * Clients Slider
              */
             // eslint-disable-next-line no-undef
@@ -210,31 +198,31 @@ export default {
             /**
              * Porfolio isotope and filter
              */
-            window.addEventListener('load', () => {
-                let portfolioContainer = select('.portfolio-container');
-                if (portfolioContainer) {
-                    // eslint-disable-next-line no-undef
-                    let portfolioIsotope = new Isotope(portfolioContainer, {
-                        itemSelector: '.portfolio-item'
-                    });
+            // window.addEventListener('load', () => {
+            //     let portfolioContainer = select('.portfolio-container');
+            //     if (portfolioContainer) {
+            //         // eslint-disable-next-line no-undef
+            //         let portfolioIsotope = new Isotope(portfolioContainer, {
+            //             itemSelector: '.portfolio-item'
+            //         });
 
-                    let portfolioFilters = select('#portfolio-flters li', true);
+            //         let portfolioFilters = select('#portfolio-flters li', true);
 
-                    on('click', '#portfolio-flters li', function (e) {
-                        e.preventDefault();
-                        portfolioFilters.forEach(function (el) {
-                            el.classList.remove('filter-active');
-                        });
-                        this.classList.add('filter-active');
+            //         on('click', '#portfolio-flters li', function (e) {
+            //             e.preventDefault();
+            //             portfolioFilters.forEach(function (el) {
+            //                 el.classList.remove('filter-active');
+            //             });
+            //             this.classList.add('filter-active');
 
-                        portfolioIsotope.arrange({
-                            filter: this.getAttribute('data-filter')
-                        });
+            //             portfolioIsotope.arrange({
+            //                 filter: this.getAttribute('data-filter')
+            //             });
 
-                    }, true);
-                }
+            //         }, true);
+            //     }
 
-            });
+            // });
 
             /**
              * Initiate portfolio lightbox 
