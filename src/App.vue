@@ -2,19 +2,19 @@
   <Navigation />
   <router-view />
   <Footer />
+  <BackToTop />
 </template>
 
 <script>
 import Navigation from "./components/Partials/Navigation.vue";
 import Footer from "./components/Partials/Footer.vue";
+import BackToTop from "./components/Partials/BackToTop.vue";
 
 export default {
   components: {
     Navigation,
     Footer,
-  },
-  mounted() {
-    this.getAllScripts();
+    BackToTop,
   },
 };
 </script>
