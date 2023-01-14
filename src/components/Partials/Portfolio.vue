@@ -14,7 +14,7 @@
 
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
+          <ul id="portfolio-flters" @click="filterPorfolio($event)">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-card">Card</li>
@@ -264,7 +264,68 @@
 </template>
 
 <script>
-export default {};
+import GLightbox from "glightbox";
+import Isotope from "isotope-layout";
+import Swiper from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+export default {
+  data() {
+    return {
+      portfolioIsotope: ``,
+    };
+  },
+  mounted() {
+    window.addEventListener("load", this.organizePorfolioLayout);
+  },
+  unmounted() {
+    window.removeEventListener("load", this.organizePorfolioLayout);
+  },
+  methods: {
+    filterPorfolio(e) {
+      let el = e.target;
+
+      document.querySelectorAll("#portfolio-flters li").forEach((item) => {
+        item.classList.remove("filter-active");
+      });
+      el.classList.add("filter-active");
+      document.querySelectorAll(`.portfolio-item`).forEach((item) => {
+        item.style.display = null;
+      });
+
+      this.portfolioIsotope.arrange({
+        filter: el.getAttribute("data-filter"),
+      });
+      this.organizePorfolioLayout();
+    },
+
+    organizePorfolioLayout() {
+      new Swiper(".portfolio-details-slider", {
+        speed: 400,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+      });
+      GLightbox({
+        selector: ".portfolio-lightbox",
+      });
+      this.portfolioIsotope = new Isotope(
+        document.querySelector(".portfolio-container"),
+        {
+          itemSelector: ".portfolio-item",
+        }
+      );
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
