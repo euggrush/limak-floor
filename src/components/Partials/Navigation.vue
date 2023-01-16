@@ -11,14 +11,21 @@
       >
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope-fill"></i
-          ><a href="mailto:service@limak-floor.ca">Email us</a>
+          ><a
+            :href="`mailto:${corporateData.email}?subject=${corporateData.supportEmailData.supportEmailSubject}&body=${corporateData.supportEmailData.supportEmailBody}`"
+            >Email us</a
+          >
           <i class="bi bi-phone-fill phone-icon"></i>
-          <a href="tel:+12368625225">Call us</a>
+          <a :href="`tel:${corporateData.phoneNumbers.roman}`">Call us</a>
         </div>
         <div class="social-links d-none d-md-block">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a :href="corporateData.facebookLink" class="facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a :href="corporateData.instagrammLink" class="instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
@@ -44,7 +51,7 @@
               <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
             </li>
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a href="#"
                 ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
               ></a>
@@ -67,7 +74,7 @@
                 <li><a href="#">Drop Down 3</a></li>
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
-            </li>
+            </li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <li>
               <a class="getstarted scrollto" href="#about">Get Started</a>
@@ -83,7 +90,13 @@
 </template>
 
 <script>
+import { CORPORATE_DATA } from "../../constants";
 export default {
+  data() {
+    return {
+      corporateData: CORPORATE_DATA,
+    };
+  },
   mounted() {
     this.getMenuWork();
   },
