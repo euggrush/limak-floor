@@ -24,7 +24,7 @@
                 repellendus deleniti vel. Minus et tempore modi architecto.
               </p>
               <a
-                href="#about"
+                href="#"
                 class="
                   btn-get-started
                   animate__animated animate__fadeInUp
