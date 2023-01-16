@@ -11,8 +11,9 @@
       >
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope-fill"></i
-          ><a href="mailto:contact@example.com">info@example.com</a>
-          <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+          ><a href="mailto:service@limak-floor.ca">Email us</a>
+          <i class="bi bi-phone-fill phone-icon"></i>
+          <a href="tel:+12368625225">Call us</a>
         </div>
         <div class="social-links d-none d-md-block">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -26,13 +27,14 @@
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center">
-        <!-- <h1 class="logo me-auto"><a href="index.html">Green</a></h1> -->
-        <img
-          src="../../assets/img/logo.png"
-          class="limak-logo me-auto"
-          alt="logo"
-          width="100"
-        />
+        <a href="index.html" class="logo me-auto"
+          ><img
+            src="../../assets/img/logo.png"
+            class="limak-logo me-auto"
+            alt="logo"
+            width="100"
+        /></a>
+
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
