@@ -150,12 +150,12 @@ export default {
 
 <style lang="scss" scoped>
 .slide-one {
-  background-image: url("../../assets/img/slide/slide-1.jpg");
+  background-image: url("../../assets/img/slide/slide-4.jpg");
 }
 .slide-two {
-  background-image: url("../../assets/img/slide/slide-2.jpg");
+  background-image: url("../../assets/img/slide/slide-5.jpg");
 }
 .slide-three {
-  background-image: url("../../assets/img/slide/slide-3.jpg");
+  background-image: url("../../assets/img/slide/slide-6.jpg");
 }
 </style>
