@@ -5,31 +5,33 @@
       <div class="row no-gutters">
         <div class="col-lg-4 col-md-6">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-laptop"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <div class="icon"><i class="bi bi-stack"></i></div>
+            <h4 class="title">Quality Materials</h4>
             <p class="description">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              Rest assured we use only the best materials for your project. You
+              can stand on the premium materials we use for your floors for
+              years to come, that's a guarantee.
             </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <div class="icon"><i class="bi bi-hand-thumbs-up-fill"></i></div>
+            <h4 class="title">Professional Service</h4>
             <p class="description">
-              Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat tarad limino ata
+              We take every project seriously and treat our customers with
+              respect and professionalism. My - Floor is known for our quick
+              work and professional customer service.
             </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 class="title">Expert Craftsmanship</h4>
             <p class="description">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur trade stravi
+              We deliver on time and to perfection, maintaining the highest
+              quality, assessed against our exacting standards.
             </p>
           </div>
         </div>
