@@ -15,13 +15,14 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
-                Welcome to <span>Green</span>
+                Transform Your Space with Limak Flooring
               </h2>
               <p class="animate__animated animate__fadeInUp">
-                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
-                est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
-                repellendus deleniti vel. Minus et tempore modi architecto.
+                Upgrade the look and feel of any room in your home or office
+                with Limak Floor Service. Our wide selection of flooring
+                options, including hardwood, laminate, tile, and more, will give
+                you the perfect finish to any space. Let us help you transform
+                your space today.
               </p>
               <a
                 href="#"
@@ -41,13 +42,14 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
-                Lorem Ipsum Dolor
+                Expert Installation and Repair Services
               </h2>
               <p class="animate__animated animate__fadeInUp">
-                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
-                est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
-                repellendus deleniti vel. Minus et tempore modi architecto.
+                Don't trust just anyone with your flooring needs. Limak Floor
+                Service has been providing expert installation and repair
+                services for over a decade. Our skilled technicians have the
+                experience and knowledge to ensure your flooring is installed or
+                repaired to the highest standard.
               </p>
               <a
                 href="#about"
@@ -67,13 +69,15 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">
-                Sequi ea ut et est quaerat
+                Affordable Prices, Exceptional Quality
               </h2>
               <p class="animate__animated animate__fadeInUp">
-                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
-                est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
-                repellendus deleniti vel. Minus et tempore modi architecto.
+                At Limak Floor Service, we believe that everyone should have
+                access to high-quality flooring. That's why we offer a wide
+                range of options at affordable prices. From premium hardwood to
+                budget-friendly laminate, we have something for every budget
+                without compromising on quality. Let us help you achieve the
+                flooring of your dreams at a price you can afford.
               </p>
               <a
                 href="#about"
@@ -148,7 +152,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .slide-one {
   background-image: url("../../assets/img/slide/slide-4.jpg");
 }
