@@ -190,7 +190,8 @@ export default {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(45, 103, 60, 0.8);
+  // background-color: rgba(45, 103, 60, 0.8);
+  background-color: $logoGreenRgba;
 }
 
 #hero .carousel-container {
@@ -209,7 +210,7 @@ export default {
 }
 
 #hero h2 {
-  color: #fff;
+  color: $logoBlue;
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
@@ -219,7 +220,8 @@ export default {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: $logoBlue;
+  font-weight: bold;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -294,11 +296,11 @@ export default {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  background: #5cb874;
+  background: $logoBlue;
 }
 
 #hero .btn-get-started:hover {
-  background: #6ec083;
+  background: $logoBlueHover;
 }
 
 @media (max-width: 992px) {
@@ -328,58 +330,5 @@ export default {
   #hero {
     height: 120vh;
   }
-}
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-}
-
-.section-bg {
-  background-color: #f8fcf9;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #5cb874;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.section-title p {
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #919191;
 }
 </style>

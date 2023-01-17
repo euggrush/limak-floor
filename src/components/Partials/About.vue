@@ -4,12 +4,7 @@
     <div class="container">
       <div class="section-title">
         <h2>About Us</h2>
-        <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
-        </p>
+        <p>Operated company specializing in flooring solutions</p>
       </div>
 
       <div class="row">
@@ -17,37 +12,19 @@
           <img src="../../assets/img/about.jpg" class="img-fluid" alt="image" />
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-          <h3>
-            Voluptatem dignissimos provident quasi corporis voluptates sit
-            assumenda.
-          </h3>
-          <p class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <ul>
-            <li>
-              <i class="bi bi-check-circled"></i> Ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
-            </li>
-            <li>
-              <i class="bi bi-check-circled"></i> Duis aute irure dolor in
-              reprehenderit in voluptate velit.
-            </li>
-            <li>
-              <i class="bi bi-check-circled"></i> Ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate trideta storacalaperda mastiro dolore
-              eu fugiat nulla pariatur.
-            </li>
-          </ul>
+          <h3>Quality Flooring Services by a Local Contractor</h3>
+          <p class="mt-3">Locally owned and operated business</p>
+          <p>Locally owned and operated business</p>
+          <p>Proud of reputation as a quality flooring contractor</p>
+          <p>Not just a sales-oriented company, but more than that</p>
+          <p>Stand by quality work</p>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum
+            Offer all types of flooring installations and repairs (hardwood,
+            carpet, tile, vinyl, laminate, linoleum)
           </p>
+          <p>Experienced and knowledgeable staff</p>
+          <p>Guarantee job done right the first time</p>
+          <p>Contact for free consultation</p>
         </div>
       </div>
     </div>
@@ -60,4 +37,30 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5cb874;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
 </style>

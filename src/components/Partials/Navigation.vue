@@ -51,30 +51,6 @@
               <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
             </li>
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <!-- <li class="dropdown">
-              <a href="#"
-                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <li>
               <a class="getstarted scrollto" href="#about">Get Started</a>
@@ -278,11 +254,11 @@ export default {
 }
 
 #topbar .contact-info a:hover {
-  color: #5cb874;
+  color: $logoGreen;
 }
 
 #topbar .contact-info i {
-  color: #5cb874;
+  color: $logoGreen;
   line-height: 0;
   margin-right: 5px;
 }
@@ -300,7 +276,7 @@ export default {
 }
 
 #topbar .social-links a:hover {
-  color: #5cb874;
+  color: $logoGreen;
 }
 
 /*--------------------------------------------------------------
@@ -328,7 +304,7 @@ export default {
 }
 
 #header .logo a {
-  color: #5cb874;
+  color: $logoGreen;
 }
 
 #header .logo img {
@@ -389,18 +365,18 @@ export default {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  color: #5cb874;
+  color: $logoGreen;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
-  border: 2px solid #5cb874;
+  border: 2px solid $logoGreen;
   transition: 0.3s;
   font-size: 14px;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  background: #5cb874;
+  background: $logoGreen;
   color: #fff;
 }
 
@@ -435,7 +411,7 @@ export default {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #5cb874;
+  color: $logoGreen;
 }
 
 .navbar .dropdown:hover > ul {
@@ -534,7 +510,7 @@ export default {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #5cb874;
+  color: $logoGreen;
 }
 
 .navbar-mobile .getstarted,
@@ -569,7 +545,7 @@ export default {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #5cb874;
+  color: $logoGreen;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
