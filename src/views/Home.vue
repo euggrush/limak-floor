@@ -3,8 +3,8 @@
     <WelcomeSlider />
     <Services />
     <About />
-    <WhyUs />
-    <OurClients />
+    <!-- <WhyUs /> -->
+    <!-- <OurClients /> -->
     <Services2 />
     <CallToAction />
     <Portfolio />
@@ -17,8 +17,8 @@
 import About from "../components/Partials/About.vue";
 import Services from "../components/Partials/Services.vue";
 import WelcomeSlider from "../components/Partials/WelcomeSlider.vue";
-import WhyUs from "../components/Partials/WhyUs.vue";
-import OurClients from "../components/Partials/OurClients.vue";
+// import WhyUs from "../components/Partials/WhyUs.vue";
+// import OurClients from "../components/Partials/OurClients.vue";
 import Services2 from "../components/Partials/Services2.vue";
 import CallToAction from "../components/Partials/CallToAction.vue";
 import Portfolio from "../components/Partials/Portfolio.vue";
@@ -31,8 +31,8 @@ export default {
     About,
     Services,
     WelcomeSlider,
-    WhyUs,
-    OurClients,
+    // WhyUs,
+    // OurClients,
     Services2,
     CallToAction,
     Portfolio,
