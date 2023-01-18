@@ -22,7 +22,7 @@
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div class="icon-box iconbox-blue">
+          <div class="icon-box iconbox-blue item-one">
             <div class="icon">
               <svg
                 width="100"
@@ -54,7 +54,7 @@
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <div class="icon-box iconbox-orange">
+          <div class="icon-box iconbox-orange item-two">
             <div class="icon">
               <svg
                 width="100"
@@ -87,7 +87,7 @@
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <div class="icon-box iconbox-pink">
+          <div class="icon-box iconbox-pink item-three">
             <div class="icon">
               <svg
                 width="100"
@@ -121,7 +121,7 @@
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div class="icon-box iconbox-yellow">
+          <div class="icon-box iconbox-yellow item-four">
             <div class="icon">
               <svg
                 width="100"
@@ -153,7 +153,7 @@
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <div class="icon-box iconbox-red">
+          <div class="icon-box iconbox-red item-five">
             <div class="icon">
               <svg
                 width="100"
@@ -189,7 +189,7 @@
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <div class="icon-box iconbox-teal">
+          <div class="icon-box iconbox-teal item-six">
             <div class="icon">
               <svg
                 width="100"
@@ -239,7 +239,7 @@ export default {};
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  // background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
 }
 
@@ -278,13 +278,15 @@ export default {};
 }
 
 .services .icon-box h4 a {
-  color: #222222;
+  // color: #222222;
+  color: $mainWhite;
   transition: ease-in-out 0.3s;
 }
 
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
+  color: $mainWhite;
   margin-bottom: 0;
 }
 
@@ -363,5 +365,39 @@ export default {};
 
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+}
+
+.item-one,
+.item-two,
+.item-three,
+.item-four,
+.item-five,
+.item-six {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-one {
+  background-image: url("../../assets/img/services/wire-brushed-floors-min.png");
+}
+
+.item-two {
+  background-image: url("../../assets/img/services/red-oak-hardwood-floors-min.png");
+}
+
+.item-three {
+  background-image: url("../../assets/img/services/maple-hardwood-floors-min.jpg");
+}
+
+.item-four {
+  background-image: url("../../assets/img/services/herringbone-floors-min.jpg");
+}
+
+.item-five {
+  background-image: url("../../assets/img/services/laminate-floors-min.jpg");
+}
+
+.item-six {
+  background-image: url("../../assets/img/services/vinyl-floors-min.jpg");
 }
 </style>
