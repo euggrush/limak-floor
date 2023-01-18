@@ -46,4 +46,52 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services {
+  padding: 20px 0;
+}
+
+.featured-services .icon-box {
+  padding: 20px;
+}
+
+.featured-services .icon-box-bg {
+  background-image: linear-gradient(
+    0deg,
+    #222222 0%,
+    #2f2f2f 50%,
+    #222222 100%
+  );
+}
+
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+
+.featured-services .icon i {
+  color: $logoGreen;
+  font-size: 42px;
+}
+
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.featured-services .title a {
+  color: #222222;
+  transition: 0.3s;
+}
+
+.featured-services .icon-box:hover .title a {
+  color: $logoGreen;
+}
+
+.featured-services .description {
+  line-height: 24px;
+  font-size: 14px;
+}
 </style>

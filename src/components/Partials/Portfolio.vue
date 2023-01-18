@@ -90,59 +90,95 @@ export default {
           { title: `Vinyl`, dataFilter: `.filter-vinyl` },
         ],
         portfolioProjects: [
+          // Wire Brushed
           {
             projectDataFilter: `filter-wire-brushed`,
-            projectPicture: `portfolio-1.jpg`,
+            projectPicture: `wire-brushed-1.jpg`,
             projectTitle: `Wire Brushed`,
             projectDescription: `Wire Brushed`,
           },
           {
-            projectDataFilter: `filter-maple-hardwood`,
-            projectPicture: `portfolio-2.jpg`,
-            projectTitle: `Web 3`,
-            projectDescription: `Web`,
+            projectDataFilter: `filter-wire-brushed`,
+            projectPicture: `wire-brushed-2.jpg`,
+            projectTitle: `Wire Brushed`,
+            projectDescription: `Wire Brushed`,
           },
           {
             projectDataFilter: `filter-wire-brushed`,
-            projectPicture: `portfolio-3.jpg`,
+            projectPicture: `wire-brushed-3.jpg`,
             projectTitle: `Wire Brushed`,
             projectDescription: `App`,
           },
+          // Red Oak Hardwood
           {
             projectDataFilter: `filter-red-oak`,
-            projectPicture: `portfolio-4.jpg`,
-            projectTitle: `Card 2`,
-            projectDescription: `Card`,
+            projectPicture: `red-oak-1.jpg`,
+            projectTitle: `Red Oak Hardwood`,
+            projectDescription: `Red Oak Hardwood`,
+          },
+          {
+            projectDataFilter: `filter-red-oak`,
+            projectPicture: `red-oak-2.jpg`,
+            projectTitle: `Red Oak Hardwood`,
+            projectDescription: `Web`,
+          },
+          // Maple Hardwood
+          {
+            projectDataFilter: `filter-maple-hardwood`,
+            projectPicture: `maple-1.jpg`,
+            projectTitle: `Maple Hardwood`,
+            projectDescription: `Maple Hardwood`,
           },
           {
             projectDataFilter: `filter-maple-hardwood`,
-            projectPicture: `portfolio-5.jpg`,
-            projectTitle: `Web 2`,
-            projectDescription: `Web`,
-          },
-          {
-            projectDataFilter: `filter-wire-brushed`,
-            projectPicture: `portfolio-6.jpg`,
-            projectTitle: `App 3`,
-            projectDescription: `App`,
-          },
-          {
-            projectDataFilter: `filter-red-oak`,
-            projectPicture: `portfolio-7.jpg`,
-            projectTitle: `Card 1`,
-            projectDescription: `Card`,
-          },
-          {
-            projectDataFilter: `filter-red-oak`,
-            projectPicture: `portfolio-8.jpg`,
-            projectTitle: `Card 3`,
-            projectDescription: `Card`,
+            projectPicture: `maple-2.jpg`,
+            projectTitle: `Maple Hardwood`,
+            projectDescription: `Maple Hardwood`,
           },
           {
             projectDataFilter: `filter-maple-hardwood`,
-            projectPicture: `portfolio-9.jpg`,
-            projectTitle: `Web 3`,
-            projectDescription: `Web`,
+            projectPicture: `maple-3.jpg`,
+            projectTitle: `Maple Hardwood`,
+            projectDescription: `Maple Hardwood`,
+          },
+          // Herringbone
+          {
+            projectDataFilter: `filter-herringbone`,
+            projectPicture: `herringbone-1.jpg`,
+            projectTitle: `Herringbone`,
+            projectDescription: `Herringbone`,
+          },
+          {
+            projectDataFilter: `filter-herringbone`,
+            projectPicture: `herringbone-2.jpg`,
+            projectTitle: `Herringbone`,
+            projectDescription: `Herringbone`,
+          },
+          {
+            projectDataFilter: `filter-herringbone`,
+            projectPicture: `herringbone-3.jpg`,
+            projectTitle: `Herringbone`,
+            projectDescription: `Herringbone`,
+          },
+          // Laminate
+          {
+            projectDataFilter: `filter-laminate`,
+            projectPicture: `laminate-1.jpg`,
+            projectTitle: `Laminate`,
+            projectDescription: `Laminate`,
+          },
+          {
+            projectDataFilter: `filter-laminate`,
+            projectPicture: `laminate-2.jpg`,
+            projectTitle: `Laminate`,
+            projectDescription: `Laminate`,
+          },
+          // Vinyl
+          {
+            projectDataFilter: `filter-vinyl`,
+            projectPicture: `vinyl-1.jpg`,
+            projectTitle: `Vinyl`,
+            projectDescription: `Vinyl`,
           },
         ],
       },
