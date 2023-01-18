@@ -34,13 +34,13 @@
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center">
-        <a href="index.html" class="logo me-auto"
+        <router-link to="/" class="logo me-auto"
           ><img
             src="../../assets/img/logo.png"
             class="limak-logo me-auto"
             alt="logo"
             width="100"
-        /></a>
+        /></router-link>
 
         <nav id="navbar" class="navbar">
           <ul>

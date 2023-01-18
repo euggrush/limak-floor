@@ -50,9 +50,9 @@
                   :title="projectItem.projectTitle"
                   ><i class="bx bx-plus"></i
                 ></a>
-                <a href="portfolio-details.html" title="More Details"
+                <router-link to="/portfolio-details" title="More Details"
                   ><i class="bx bx-link"></i
-                ></a>
+                ></router-link>
               </div>
             </div>
           </div>
@@ -73,7 +73,6 @@ import "swiper/css/pagination";
 export default {
   data() {
     return {
-      portfolioIsotope: ``,
       portfolioData: {
         tabs: [
           { title: `All`, dataFilter: `*` },
@@ -197,7 +196,9 @@ export default {
         item.style.display = null;
       });
 
-      this.portfolioIsotope.arrange({
+      new Isotope(document.querySelector(".portfolio-container"), {
+        itemSelector: ".portfolio-item",
+      }).arrange({
         filter: el.getAttribute("data-filter"),
       });
       this.organizePorfolioLayout();
@@ -220,12 +221,9 @@ export default {
       GLightbox({
         selector: ".portfolio-lightbox",
       });
-      this.portfolioIsotope = new Isotope(
-        document.querySelector(".portfolio-container"),
-        {
-          itemSelector: ".portfolio-item",
-        }
-      );
+      new Isotope(document.querySelector(".portfolio-container"), {
+        itemSelector: ".portfolio-item",
+      });
     },
   },
 };
@@ -353,76 +351,5 @@ export default {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid $logoGreen;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
-  background-color: $logoGreen;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
 }
 </style>
