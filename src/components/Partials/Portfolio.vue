@@ -82,61 +82,64 @@ export default {
       portfolioData: {
         tabs: [
           { title: `All`, dataFilter: `*` },
-          { title: `App`, dataFilter: `.filter-app` },
-          { title: `Card`, dataFilter: `.filter-card` },
-          { title: `Web`, dataFilter: `.filter-web` },
+          { title: `Wire Brushed`, dataFilter: `.filter-wire-brushed` },
+          { title: `Red Oak Hardwood`, dataFilter: `.filter-red-oak` },
+          { title: `Maple Hardwood`, dataFilter: `.filter-maple-hardwood` },
+          { title: `Herringbone`, dataFilter: `.filter-herringbone` },
+          { title: `Laminate`, dataFilter: `.filter-laminate` },
+          { title: `Vinyl`, dataFilter: `.filter-vinyl` },
         ],
         portfolioProjects: [
           {
-            projectDataFilter: `filter-app`,
+            projectDataFilter: `filter-wire-brushed`,
             projectPicture: `portfolio-1.jpg`,
-            projectTitle: `App 1`,
-            projectDescription: `App`,
+            projectTitle: `Wire Brushed`,
+            projectDescription: `Wire Brushed`,
           },
           {
-            projectDataFilter: `filter-web`,
+            projectDataFilter: `filter-maple-hardwood`,
             projectPicture: `portfolio-2.jpg`,
             projectTitle: `Web 3`,
             projectDescription: `Web`,
           },
           {
-            projectDataFilter: `filter-app`,
+            projectDataFilter: `filter-wire-brushed`,
             projectPicture: `portfolio-3.jpg`,
-            projectTitle: `App 2`,
+            projectTitle: `Wire Brushed`,
             projectDescription: `App`,
           },
           {
-            projectDataFilter: `filter-card`,
+            projectDataFilter: `filter-red-oak`,
             projectPicture: `portfolio-4.jpg`,
             projectTitle: `Card 2`,
             projectDescription: `Card`,
           },
           {
-            projectDataFilter: `filter-web`,
+            projectDataFilter: `filter-maple-hardwood`,
             projectPicture: `portfolio-5.jpg`,
             projectTitle: `Web 2`,
             projectDescription: `Web`,
           },
           {
-            projectDataFilter: `filter-app`,
+            projectDataFilter: `filter-wire-brushed`,
             projectPicture: `portfolio-6.jpg`,
             projectTitle: `App 3`,
             projectDescription: `App`,
           },
           {
-            projectDataFilter: `filter-card`,
+            projectDataFilter: `filter-red-oak`,
             projectPicture: `portfolio-7.jpg`,
             projectTitle: `Card 1`,
             projectDescription: `Card`,
           },
           {
-            projectDataFilter: `filter-card`,
+            projectDataFilter: `filter-red-oak`,
             projectPicture: `portfolio-8.jpg`,
             projectTitle: `Card 3`,
             projectDescription: `Card`,
           },
           {
-            projectDataFilter: `filter-web`,
+            projectDataFilter: `filter-maple-hardwood`,
             projectPicture: `portfolio-9.jpg`,
             projectTitle: `Web 3`,
             projectDescription: `Web`,
@@ -229,7 +232,7 @@ export default {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #5cb874;
+  background: $logoGreen;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -345,14 +348,14 @@ export default {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5cb874;
+  border: 1px solid $logoGreen;
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #5cb874;
+  background-color: $logoGreen;
 }
 
 .portfolio-details .portfolio-info {
