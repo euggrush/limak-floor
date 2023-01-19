@@ -49,7 +49,7 @@ export default {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: $logoGreen;
+  background: $logoBlue;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -63,7 +63,7 @@ export default {
 }
 
 .back-to-top:hover {
-  background: $logoGreenHover;
+  background: $logoBlueHover;
   color: #fff;
 }
 

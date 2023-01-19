@@ -64,12 +64,12 @@
 </template>
 
 <script>
-import GLightbox from "glightbox";
-import Isotope from "isotope-layout";
-import Swiper from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import GLightbox from "glightbox";
+// import Isotope from "isotope-layout";
+// import Swiper from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 export default {
   data() {
     return {
@@ -196,6 +196,7 @@ export default {
         item.style.display = null;
       });
 
+      // eslint-disable-next-line no-undef
       new Isotope(document.querySelector(".portfolio-container"), {
         itemSelector: ".portfolio-item",
       }).arrange({
@@ -205,6 +206,7 @@ export default {
     },
 
     organizePorfolioLayout() {
+      // eslint-disable-next-line no-undef
       new Swiper(".portfolio-details-slider", {
         speed: 400,
         loop: true,
@@ -218,9 +220,11 @@ export default {
           clickable: true,
         },
       });
+      // eslint-disable-next-line no-undef
       GLightbox({
         selector: ".portfolio-lightbox",
       });
+      // eslint-disable-next-line no-undef
       new Isotope(document.querySelector(".portfolio-container"), {
         itemSelector: ".portfolio-item",
       });

@@ -11,7 +11,7 @@
           <a
             class="cta-btn align-middle"
             :href="`mailto:${corporateData.email}?subject=${corporateData.supportEmailData.supportEmailSubject}&body=${corporateData.supportEmailData.supportEmailBody}`"
-            >Call To Action</a
+            >Email us</a
           >
         </div>
       </div>
@@ -37,7 +37,7 @@ export default {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: $logoGreen;
+  background: $logoBlue;
   padding: 80px 0;
 }
 
