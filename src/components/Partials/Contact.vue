@@ -3,12 +3,17 @@
   <section id="contact" class="contact">
     <div class="container">
       <div class="section-title">
-        <h2>Contact</h2>
+        <h2>Contact Limak Floor Service</h2>
         <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+          {{
+            `At Limak Floor Service, we're dedicated to providing the highest level
+          of customer service. If you have any questions or need assistance with
+          your flooring needs, please don't hesitate to reach out to us. You can
+          call us at ${corpData.phoneNumbers.roman} or email us at ${corpData.email}, 
+          and one of our team members will get
+          back to you as soon as possible. We're here to help you create the
+          perfect floors for your home or office.`
+          }}
         </p>
       </div>
 
