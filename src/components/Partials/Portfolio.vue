@@ -225,9 +225,9 @@ export default {
         selector: ".portfolio-lightbox",
       });
       // eslint-disable-next-line no-undef
-      new Isotope(document.querySelector(".portfolio-container"), {
-        itemSelector: ".portfolio-item",
-      });
+      // new Isotope(document.querySelector(".portfolio-container"), {
+      //   itemSelector: ".portfolio-item",
+      // });
     },
   },
 };
