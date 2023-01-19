@@ -101,7 +101,7 @@ export default {
             projectDataFilter: `filter-wire-brushed`,
             projectPicture: `wire-brushed-3.jpg`,
             projectTitle: `Wire Brushed`,
-            projectDescription: `App`,
+            projectDescription: `Wire Brushed`,
           },
           // Red Oak Hardwood
           {
@@ -114,7 +114,7 @@ export default {
             projectDataFilter: `filter-red-oak`,
             projectPicture: `red-oak-2.jpg`,
             projectTitle: `Red Oak Hardwood`,
-            projectDescription: `Web`,
+            projectDescription: `Red Oak Hardwood`,
           },
           // Maple Hardwood
           {
