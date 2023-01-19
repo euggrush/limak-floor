@@ -8,7 +8,7 @@
     <Services2 />
     <CallToAction />
     <Portfolio />
-    <Team />
+    <!-- <Team /> -->
     <Contact />
   </div>
 </template>
@@ -22,7 +22,7 @@ import WelcomeSlider from "../components/Partials/WelcomeSlider.vue";
 import Services2 from "../components/Partials/Services2.vue";
 import CallToAction from "../components/Partials/CallToAction.vue";
 import Portfolio from "../components/Partials/Portfolio.vue";
-import Team from "../components/Partials/Team.vue";
+// import Team from "../components/Partials/Team.vue";
 import Contact from "../components/Partials/Contact.vue";
 
 export default {
@@ -36,7 +36,7 @@ export default {
     Services2,
     CallToAction,
     Portfolio,
-    Team,
+    // Team,
     Contact,
   },
 };

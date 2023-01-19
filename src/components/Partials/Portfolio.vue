@@ -1,15 +1,10 @@
 <template>
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio pb-0">
     <div class="container">
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
-        </p>
+        <p>Get inspired by our beautiful flooring projects</p>
       </div>
 
       <div class="row">
@@ -55,9 +50,9 @@
                   :title="projectItem.projectTitle"
                   ><i class="bx bx-plus"></i
                 ></a>
-                <a href="portfolio-details.html" title="More Details"
+                <router-link to="/portfolio-details" title="More Details"
                   ><i class="bx bx-link"></i
-                ></a>
+                ></router-link>
               </div>
             </div>
           </div>
@@ -69,16 +64,15 @@
 </template>
 
 <script>
-import GLightbox from "glightbox";
-import Isotope from "isotope-layout";
-import Swiper from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import GLightbox from "glightbox";
+// import Isotope from "isotope-layout";
+// import Swiper from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 export default {
   data() {
     return {
-      portfolioIsotope: ``,
       portfolioData: {
         tabs: [
           { title: `All`, dataFilter: `*` },
@@ -90,59 +84,95 @@ export default {
           { title: `Vinyl`, dataFilter: `.filter-vinyl` },
         ],
         portfolioProjects: [
+          // Wire Brushed
           {
             projectDataFilter: `filter-wire-brushed`,
-            projectPicture: `portfolio-1.jpg`,
+            projectPicture: `wire-brushed-1.jpg`,
             projectTitle: `Wire Brushed`,
             projectDescription: `Wire Brushed`,
           },
           {
-            projectDataFilter: `filter-maple-hardwood`,
-            projectPicture: `portfolio-2.jpg`,
-            projectTitle: `Web 3`,
-            projectDescription: `Web`,
-          },
-          {
             projectDataFilter: `filter-wire-brushed`,
-            projectPicture: `portfolio-3.jpg`,
+            projectPicture: `wire-brushed-2.jpg`,
             projectTitle: `Wire Brushed`,
-            projectDescription: `App`,
-          },
-          {
-            projectDataFilter: `filter-red-oak`,
-            projectPicture: `portfolio-4.jpg`,
-            projectTitle: `Card 2`,
-            projectDescription: `Card`,
-          },
-          {
-            projectDataFilter: `filter-maple-hardwood`,
-            projectPicture: `portfolio-5.jpg`,
-            projectTitle: `Web 2`,
-            projectDescription: `Web`,
+            projectDescription: `Wire Brushed`,
           },
           {
             projectDataFilter: `filter-wire-brushed`,
-            projectPicture: `portfolio-6.jpg`,
-            projectTitle: `App 3`,
-            projectDescription: `App`,
+            projectPicture: `wire-brushed-3.jpg`,
+            projectTitle: `Wire Brushed`,
+            projectDescription: `Wire Brushed`,
+          },
+          // Red Oak Hardwood
+          {
+            projectDataFilter: `filter-red-oak`,
+            projectPicture: `red-oak-1.jpg`,
+            projectTitle: `Red Oak Hardwood`,
+            projectDescription: `Red Oak Hardwood`,
           },
           {
             projectDataFilter: `filter-red-oak`,
-            projectPicture: `portfolio-7.jpg`,
-            projectTitle: `Card 1`,
-            projectDescription: `Card`,
+            projectPicture: `red-oak-2.jpg`,
+            projectTitle: `Red Oak Hardwood`,
+            projectDescription: `Red Oak Hardwood`,
           },
+          // Maple Hardwood
           {
-            projectDataFilter: `filter-red-oak`,
-            projectPicture: `portfolio-8.jpg`,
-            projectTitle: `Card 3`,
-            projectDescription: `Card`,
+            projectDataFilter: `filter-maple-hardwood`,
+            projectPicture: `maple-1.jpg`,
+            projectTitle: `Maple Hardwood`,
+            projectDescription: `Maple Hardwood`,
           },
           {
             projectDataFilter: `filter-maple-hardwood`,
-            projectPicture: `portfolio-9.jpg`,
-            projectTitle: `Web 3`,
-            projectDescription: `Web`,
+            projectPicture: `maple-2.jpg`,
+            projectTitle: `Maple Hardwood`,
+            projectDescription: `Maple Hardwood`,
+          },
+          {
+            projectDataFilter: `filter-maple-hardwood`,
+            projectPicture: `maple-3.jpg`,
+            projectTitle: `Maple Hardwood`,
+            projectDescription: `Maple Hardwood`,
+          },
+          // Herringbone
+          {
+            projectDataFilter: `filter-herringbone`,
+            projectPicture: `herringbone-1.jpg`,
+            projectTitle: `Herringbone`,
+            projectDescription: `Herringbone`,
+          },
+          {
+            projectDataFilter: `filter-herringbone`,
+            projectPicture: `herringbone-2.jpg`,
+            projectTitle: `Herringbone`,
+            projectDescription: `Herringbone`,
+          },
+          {
+            projectDataFilter: `filter-herringbone`,
+            projectPicture: `herringbone-3.jpg`,
+            projectTitle: `Herringbone`,
+            projectDescription: `Herringbone`,
+          },
+          // Laminate
+          {
+            projectDataFilter: `filter-laminate`,
+            projectPicture: `laminate-1.jpg`,
+            projectTitle: `Laminate`,
+            projectDescription: `Laminate`,
+          },
+          {
+            projectDataFilter: `filter-laminate`,
+            projectPicture: `laminate-2.jpg`,
+            projectTitle: `Laminate`,
+            projectDescription: `Laminate`,
+          },
+          // Vinyl
+          {
+            projectDataFilter: `filter-vinyl`,
+            projectPicture: `vinyl-1.jpg`,
+            projectTitle: `Vinyl`,
+            projectDescription: `Vinyl`,
           },
         ],
       },
@@ -166,13 +196,17 @@ export default {
         item.style.display = null;
       });
 
-      this.portfolioIsotope.arrange({
+      // eslint-disable-next-line no-undef
+      new Isotope(document.querySelector(".portfolio-container"), {
+        itemSelector: ".portfolio-item",
+      }).arrange({
         filter: el.getAttribute("data-filter"),
       });
       this.organizePorfolioLayout();
     },
 
     organizePorfolioLayout() {
+      // eslint-disable-next-line no-undef
       new Swiper(".portfolio-details-slider", {
         speed: 400,
         loop: true,
@@ -186,15 +220,14 @@ export default {
           clickable: true,
         },
       });
+      // eslint-disable-next-line no-undef
       GLightbox({
         selector: ".portfolio-lightbox",
       });
-      this.portfolioIsotope = new Isotope(
-        document.querySelector(".portfolio-container"),
-        {
-          itemSelector: ".portfolio-item",
-        }
-      );
+      // eslint-disable-next-line no-undef
+      // new Isotope(document.querySelector(".portfolio-container"), {
+      //   itemSelector: ".portfolio-item",
+      // });
     },
   },
 };
@@ -322,76 +355,5 @@ export default {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid $logoGreen;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
-  background-color: $logoGreen;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
 }
 </style>

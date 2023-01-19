@@ -4,14 +4,21 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9 text-center text-lg-start">
-          <h3>Need some flooring-related guidance?</h3>
-          <p>Request a free consultation and price estimate</p>
+          <h3>Get a Free Estimate Today!</h3>
+          <p>
+            Ready to transform your space with new flooring? Let the experts at
+            Limak Floor Service help you choose the perfect option for your home
+            or office. Email or give us a call to schedule a free estimate
+            today. Our team will work with you to find the best solution for
+            your needs and budget. Don't wait, take the first step to beautiful
+            new floors with Limak Floor Service!
+          </p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
           <a
             class="cta-btn align-middle"
             :href="`mailto:${corporateData.email}?subject=${corporateData.supportEmailData.supportEmailSubject}&body=${corporateData.supportEmailData.supportEmailBody}`"
-            >Call To Action</a
+            >Email us</a
           >
         </div>
       </div>
@@ -37,7 +44,7 @@ export default {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: $logoGreen;
+  background: $logoBlue;
   padding: 80px 0;
 }
 
