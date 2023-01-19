@@ -1,6 +1,6 @@
 <template>
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio pb-0">
     <div class="container">
       <div class="section-title">
         <h2>Portfolio</h2>
