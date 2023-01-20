@@ -90,7 +90,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: $logoGreen;
+  background: $logoBlue;
   bottom: 0;
   left: calc(50% - 20px);
 }

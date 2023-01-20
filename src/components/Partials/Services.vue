@@ -71,7 +71,7 @@ export default {};
 }
 
 .featured-services .icon i {
-  color: $logoGreen;
+  color: $logoBlue;
   font-size: 42px;
 }
 
@@ -87,7 +87,7 @@ export default {};
 }
 
 .featured-services .icon-box:hover .title a {
-  color: $logoGreen;
+  color: $logoBlue;
 }
 
 .featured-services .description {
