@@ -25,7 +25,7 @@
                 your space today.
               </p>
               <a
-                href="#"
+                href="#about"
                 class="
                   btn-get-started
                   animate__animated animate__fadeInUp
