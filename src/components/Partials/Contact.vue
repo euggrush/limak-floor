@@ -153,6 +153,7 @@ export default {
           this.customerName = ``;
           this.customerSubject = ``;
           this.customerMsg = ``;
+          this.isMsgLoading = true;
         })
         .catch((err) => {
           console.log(err);
