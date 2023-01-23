@@ -25,7 +25,7 @@
                 your space today.
               </p>
               <a
-                href="#"
+                href="#about"
                 class="
                   btn-get-started
                   animate__animated animate__fadeInUp
@@ -210,7 +210,7 @@ export default {
 }
 
 #hero h2 {
-  color: $logoBlue;
+  color: $mainWhite;
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
@@ -220,7 +220,7 @@ export default {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: $logoBlue;
+  color: $mainWhite;
   font-weight: bold;
 }
 

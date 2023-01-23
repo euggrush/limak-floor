@@ -265,7 +265,7 @@ export default {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: $logoGreen;
+  background: $logoBlue;
 }
 
 .portfolio #portfolio-flters li:last-child {
