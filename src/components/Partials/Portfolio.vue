@@ -50,7 +50,7 @@
                   :title="projectItem.projectTitle"
                   ><i class="bx bx-plus"></i
                 ></a>
-                <router-link to="/portfolio-details" title="More Details"
+                <router-link to="/portfolio" title="More Details"
                   ><i class="bx bx-link"></i
                 ></router-link>
               </div>

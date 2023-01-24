@@ -13,12 +13,19 @@
           <i class="bi bi-envelope-fill"></i
           ><a
             :href="`mailto:${corporateData.email}?subject=${corporateData.supportEmailData.supportEmailSubject}&body=${corporateData.supportEmailData.supportEmailBody}`"
-            >Email us</a
-          >
-          <i class="bi bi-phone-fill phone-icon"></i>
-          <a :href="`tel:${corporateData.phoneNumbers.anna}`">Call us</a>
-          <i class="bi bi-chat-left-dots-fill ms-3 mt-1"></i>
-          <a :href="`sms:${corporateData.phoneNumbers.roman}`">Text us</a>
+            ><span class="on-mobile">Email us</span
+            ><span class="on-desktop fw-bold">{{ corporateData.email }}</span>
+          </a>
+          <i class="bi bi-phone-fill ms-3 ms-lg-5"></i>
+          <a :href="`tel:${corporateData.phoneNumbers.anna}`"
+            ><span class="on-mobile">Call us</span
+            ><span class="on-desktop fw-bold">+1 (647)-453-8824</span>
+          </a>
+          <i class="bi bi-chat-left-dots-fill ms-3 ms-lg-5"></i>
+          <a :href="`sms:${corporateData.phoneNumbers.roman}`"
+            ><span class="on-mobile">Text us</span
+            ><span class="on-desktop fw-bold">+1 (236)-862-5225</span>
+          </a>
         </div>
         <div class="social-links d-none d-md-block">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -267,9 +274,9 @@ export default {
   margin-right: 5px;
 }
 
-#topbar .contact-info .phone-icon {
-  margin-left: 15px;
-}
+// #topbar .contact-info .phone-icon {
+//   margin-left: 15px;
+// }
 
 #topbar .social-links a {
   color: #6f6f6f;
@@ -554,5 +561,17 @@ export default {
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
+}
+.on-mobile {
+  display: inline-block;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+.on-desktop {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+  }
 }
 </style>
