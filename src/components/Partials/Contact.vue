@@ -39,9 +39,17 @@
             </div>
 
             <div class="phone">
-              <a :href="`tel:${corpData.phoneNumbers.roman}`">
+              <a :href="`tel:${corpData.phoneNumbers.anna}`">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
+                <p>{{ corpData.phoneNumbers.anna }}</p>
+              </a>
+            </div>
+
+            <div class="text">
+              <a :href="`sms:${corpData.phoneNumbers.roman}`">
+                <i class="bi bi-chat-dots"></i>
+                <h4>Text:</h4>
                 <p>{{ corpData.phoneNumbers.roman }}</p>
               </a>
             </div>
@@ -102,7 +110,7 @@
               <textarea
                 class="form-control"
                 name="message"
-                rows="10"
+                rows="13"
                 required
                 v-model="customerMsg"
               ></textarea>
@@ -115,7 +123,7 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="submit">Send Message</button>
+              <button type="submit" class="mt-3">Send Message</button>
             </div>
           </form>
         </div>
@@ -249,7 +257,8 @@ export default {
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .phone:hover i,
+.contact .info .text:hover i {
   background: $logoBlue;
   color: #fff;
 }

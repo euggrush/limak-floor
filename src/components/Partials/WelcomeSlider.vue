@@ -25,7 +25,7 @@
                 your space today.
               </p>
               <a
-                href="#about"
+                href="#"
                 class="
                   btn-get-started
                   animate__animated animate__fadeInUp
@@ -52,7 +52,7 @@
                 repaired to the highest standard.
               </p>
               <a
-                href="#about"
+                href="#"
                 class="
                   btn-get-started
                   animate__animated animate__fadeInUp
@@ -80,7 +80,7 @@
                 flooring of your dreams at a price you can afford.
               </p>
               <a
-                href="#about"
+                href="#"
                 class="
                   btn-get-started
                   animate__animated animate__fadeInUp

@@ -16,7 +16,9 @@
             >Email us</a
           >
           <i class="bi bi-phone-fill phone-icon"></i>
-          <a :href="`tel:${corporateData.phoneNumbers.roman}`">Call us</a>
+          <a :href="`tel:${corporateData.phoneNumbers.anna}`">Call us</a>
+          <i class="bi bi-chat-left-dots-fill ms-3 mt-1"></i>
+          <a :href="`sms:${corporateData.phoneNumbers.roman}`">Text us</a>
         </div>
         <div class="social-links d-none d-md-block">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
