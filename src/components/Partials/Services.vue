@@ -20,8 +20,8 @@
             <h4 class="title">Professional Service</h4>
             <p class="description">
               We take every project seriously and treat our customers with
-              respect and professionalism. My - Floor is known for our quick
-              work and professional customer service.
+              respect and professionalism. Limak Floor Service is known for our
+              quick work and professional customer service.
             </p>
           </div>
         </div>
