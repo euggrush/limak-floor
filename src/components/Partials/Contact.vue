@@ -107,9 +107,9 @@
               ></textarea>
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
+              <div v-if="isMsgLoading" class="loading">Loading</div>
+              <div v-if="isMsgError" class="error-message">{{ errorMsg }}</div>
+              <div v-if="isMsgSent" class="sent-message">
                 Your message has been sent. Thank you!
               </div>
             </div>
@@ -137,27 +137,44 @@ export default {
       isMsgLoading: false,
       isMsgSent: false,
       isMsgError: false,
+      errorMsg: `Something went wrong please try again.`,
     };
   },
   methods: {
+    showRequestError() {
+      this.isMsgError = true;
+      setTimeout(() => {
+        this.isMsgError = false;
+      }, 1000);
+    },
+    showMsgSent() {
+      this.isMsgSent = true;
+      setTimeout(() => {
+        this.isMsgSent = false;
+      }, 1000);
+    },
     sendRequest() {
-      this.$store
-        .dispatch(`SEND_FORM_REQUEST`, {
-          email: this.customerEmail,
-          name: this.customerName,
-          message: this.customerMsg,
-        })
-        .then((result) => {
-          console.log(result);
-          this.customerEmail = ``;
-          this.customerName = ``;
-          this.customerSubject = ``;
-          this.customerMsg = ``;
-          this.isMsgLoading = true;
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      this.isMsgLoading = true;
+      setTimeout(() => {
+        this.$store
+          .dispatch(`SEND_FORM_REQUEST`, {
+            email: this.customerEmail,
+            name: this.customerName,
+            message: this.customerMsg,
+          })
+          .then((result) => {
+            console.log(result);
+            this.customerEmail = ``;
+            this.customerName = ``;
+            this.customerSubject = ``;
+            this.customerMsg = ``;
+            this.isMsgLoading = false;
+            this.showMsgSent();
+          })
+          .catch(() => {
+            this.showRequestError();
+          });
+      }, 1000);
     },
   },
 };
@@ -250,7 +267,7 @@ export default {
 }
 
 .contact .php-email-form .error-message {
-  display: none;
+  // display: none;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -263,7 +280,7 @@ export default {
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
+  // display: none;
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -272,7 +289,7 @@ export default {
 }
 
 .contact .php-email-form .loading {
-  display: none;
+  // display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
