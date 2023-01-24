@@ -48,6 +48,7 @@
 
             <iframe
               :src="corpData.locationPin"
+              title="pin"
               frameborder="0"
               style="border: 0; width: 100%; height: 290px"
               allowfullscreen
