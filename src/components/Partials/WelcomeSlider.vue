@@ -166,10 +166,10 @@ export default {
   background-image: url("../../assets/img/slide/slide-4.jpg");
 }
 .slide-two {
-  background-image: url("../../assets/img/slide/slide-5.jpg");
+  background-image: url("../../assets/img/slide/slide-6.jpg");
 }
 .slide-three {
-  background-image: url("../../assets/img/slide/slide-6.jpg");
+  background-image: url("../../assets/img/slide/slide-8.jpg");
 }
 
 /*--------------------------------------------------------------
