@@ -24,15 +24,17 @@
                 you the perfect finish to any space. Let us help you transform
                 your space today.
               </p>
-              <a
+              <button
                 href="#"
                 class="
-                  btn-get-started
+                  btn btn-get-started
                   animate__animated animate__fadeInUp
                   scrollto
                 "
-                >Read More</a
+                @click="scrollToId"
               >
+                Read More
+              </button>
             </div>
           </div>
         </div>
@@ -51,15 +53,17 @@
                 experience and knowledge to ensure your flooring is installed or
                 repaired to the highest standard.
               </p>
-              <a
+              <button
                 href="#"
                 class="
-                  btn-get-started
+                  btn btn-get-started
                   animate__animated animate__fadeInUp
                   scrollto
                 "
-                >Read More</a
+                @click="scrollToId"
               >
+                Read More
+              </button>
             </div>
           </div>
         </div>
@@ -79,15 +83,17 @@
                 without compromising on quality. Let us help you achieve the
                 flooring of your dreams at a price you can afford.
               </p>
-              <a
+              <button
                 href="#"
                 class="
-                  btn-get-started
+                  btn btn-get-started
                   animate__animated animate__fadeInUp
                   scrollto
                 "
-                >Read More</a
+                @click="scrollToId"
               >
+                Read More
+              </button>
             </div>
           </div>
         </div>
@@ -127,6 +133,9 @@ export default {
     this.getSlider();
   },
   methods: {
+    scrollToId() {
+      document.getElementById(`services`).scrollIntoView();
+    },
     getSlider() {
       let heroCarouselIndicators = document.querySelector(
         "#hero-carousel-indicators"

@@ -29,33 +29,23 @@
           class="col-lg-4 col-md-6 portfolio-item"
           :class="projectItem.projectDataFilter"
         >
-          <div class="portfolio-wrap">
-            <img
-              :src="
-                require(`@/assets/img/portfolio/${projectItem.projectPicture}`)
-              "
-              class="img-fluid"
-              alt="image"
-            />
-            <div class="portfolio-info">
-              <h4>{{ projectItem.projectTitle }}</h4>
-              <p>{{ projectItem.projectDescription }}</p>
-              <div class="portfolio-links">
-                <a
-                  :href="
-                    require(`@/assets/img/portfolio/${projectItem.projectPicture}`)
-                  "
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  :title="projectItem.projectTitle"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <router-link to="/portfolio" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></router-link>
-              </div>
+          <a
+            :href="
+              require(`@/assets/img/portfolio/${projectItem.projectPicture}`)
+            "
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox"
+          >
+            <div class="portfolio-wrap">
+              <img
+                :src="
+                  require(`@/assets/img/portfolio/${projectItem.projectPicture}`)
+                "
+                class="img-fluid"
+                alt="image"
+              />
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -64,12 +54,7 @@
 </template>
 
 <script>
-// import GLightbox from "glightbox";
-// import Isotope from "isotope-layout";
-// import Swiper from "swiper";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import GLightbox from "glightbox";
 export default {
   data() {
     return {
@@ -220,14 +205,9 @@ export default {
           clickable: true,
         },
       });
-      // eslint-disable-next-line no-undef
       GLightbox({
         selector: ".portfolio-lightbox",
       });
-      // eslint-disable-next-line no-undef
-      // new Isotope(document.querySelector(".portfolio-container"), {
-      //   itemSelector: ".portfolio-item",
-      // });
     },
   },
 };
