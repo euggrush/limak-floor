@@ -39,15 +39,24 @@
             </div>
 
             <div class="phone">
-              <a :href="`tel:${corpData.phoneNumbers.roman}`">
+              <a :href="`tel:${corpData.phoneNumbers.anna}`">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
+                <p>{{ corpData.phoneNumbers.anna }}</p>
+              </a>
+            </div>
+
+            <div class="text">
+              <a :href="`sms:${corpData.phoneNumbers.roman}`">
+                <i class="bi bi-chat-dots"></i>
+                <h4>Text:</h4>
                 <p>{{ corpData.phoneNumbers.roman }}</p>
               </a>
             </div>
 
             <iframe
               :src="corpData.locationPin"
+              title="pin"
               frameborder="0"
               style="border: 0; width: 100%; height: 290px"
               allowfullscreen
@@ -101,20 +110,20 @@
               <textarea
                 class="form-control"
                 name="message"
-                rows="10"
+                rows="13"
                 required
                 v-model="customerMsg"
               ></textarea>
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
+              <div v-if="isMsgLoading" class="loading">Loading</div>
+              <div v-if="isMsgError" class="error-message">{{ errorMsg }}</div>
+              <div v-if="isMsgSent" class="sent-message">
                 Your message has been sent. Thank you!
               </div>
             </div>
             <div class="text-center">
-              <button type="submit">Send Message</button>
+              <button type="submit" class="mt-3">Send Message</button>
             </div>
           </form>
         </div>
@@ -137,26 +146,44 @@ export default {
       isMsgLoading: false,
       isMsgSent: false,
       isMsgError: false,
+      errorMsg: `Something went wrong please try again.`,
     };
   },
   methods: {
+    showRequestError() {
+      this.isMsgError = true;
+      setTimeout(() => {
+        this.isMsgError = false;
+      }, 1000);
+    },
+    showMsgSent() {
+      this.isMsgSent = true;
+      setTimeout(() => {
+        this.isMsgSent = false;
+      }, 1000);
+    },
     sendRequest() {
-      this.$store
-        .dispatch(`SEND_FORM_REQUEST`, {
-          email: this.customerEmail,
-          name: this.customerName,
-          message: this.customerMsg,
-        })
-        .then((result) => {
-          console.log(result);
-          this.customerEmail = ``;
-          this.customerName = ``;
-          this.customerSubject = ``;
-          this.customerMsg = ``;
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      this.isMsgLoading = true;
+      setTimeout(() => {
+        this.$store
+          .dispatch(`SEND_FORM_REQUEST`, {
+            email: this.customerEmail,
+            name: this.customerName,
+            message: this.customerMsg,
+          })
+          .then((result) => {
+            console.log(result);
+            this.customerEmail = ``;
+            this.customerName = ``;
+            this.customerSubject = ``;
+            this.customerMsg = ``;
+            this.isMsgLoading = false;
+            this.showMsgSent();
+          })
+          .catch(() => {
+            this.showRequestError();
+          });
+      }, 1000);
     },
   },
 };
@@ -230,7 +257,8 @@ export default {
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .phone:hover i,
+.contact .info .text:hover i {
   background: $logoBlue;
   color: #fff;
 }
@@ -249,7 +277,7 @@ export default {
 }
 
 .contact .php-email-form .error-message {
-  display: none;
+  // display: none;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -262,7 +290,7 @@ export default {
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
+  // display: none;
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -271,7 +299,7 @@ export default {
 }
 
 .contact .php-email-form .loading {
-  display: none;
+  // display: none;
   background: #fff;
   text-align: center;
   padding: 15px;

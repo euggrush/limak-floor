@@ -2,7 +2,8 @@ import {
   createRouter,
   createWebHashHistory
 } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Home.vue';
+import NotFoundPage from '../components/NotFoundPage.vue';
 
 const routes = [{
     path: '/',
@@ -13,6 +14,11 @@ const routes = [{
     path: '/portfolio-details',
     name: 'PortfolioDetails',
     component: () => import( /* webpackChunkName: "about" */ '../components/PortfolioDetails.vue')
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: NotFoundPage,
+    component: NotFoundPage
   }
 ]
 

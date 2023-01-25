@@ -14,7 +14,6 @@
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
           <h3>Quality Flooring Services by a Local Contractor</h3>
           <p class="mt-3">Locally owned and operated business</p>
-          <p>Locally owned and operated business</p>
           <p>Proud of reputation as a quality flooring contractor</p>
           <p>Not just a sales-oriented company, but more than that</p>
           <p>Stand by quality work</p>
